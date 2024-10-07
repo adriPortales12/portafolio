@@ -1,0 +1,35 @@
+/* src/styles/App.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  .project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
