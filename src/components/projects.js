@@ -1,18 +1,23 @@
-// src/components/Projects.js
 import React from 'react';
 
 const projects = [
   {
-    title: "Aplicación de Tareas",
-    description: "Una app para gestionar tareas diarias.",
-    tech: "React, Firebase",
-    link: "https://github.com/usuario/tareas"
+    title: "Wallity",
+    description: "TFG de DAW. Aplicación de control de gastos personales",
+    tech: "Javascript, PHP, Bootstrap, SQL",
+    link: "https://github.com/adriPortales12/Wallity"
   },
   {
-    title: "E-Commerce",
-    description: "Tienda en línea con carrito de compras.",
-    tech: "React, Node.js, MongoDB",
-    link: "https://github.com/usuario/ecommerce"
+    title: "Wallity",
+    description: "TFG de DAW. Aplicación de control de gastos personales",
+    tech: "Javascript, PHP, Bootstrap, SQL",
+    link: "https://github.com/adriPortales12/Wallity"
+  },
+  {
+    title: "Wallity",
+    description: "TFG de DAW. Aplicación de control de gastos personales",
+    tech: "Javascript, PHP, Bootstrap, SQL",
+    link: "https://github.com/adriPortales12/Wallity"
   }
 ];
 
@@ -20,7 +25,7 @@ function Projects() {
   return (
     <section id="projects">
       <h2>Proyectos</h2>
-      <div>
+      <div className="projects-container">
         {projects.map((project, index) => (
           <div key={index} className="project">
             <h3>{project.title}</h3>

@@ -1,35 +1,205 @@
 /* src/styles/App.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/vintage-wallpaper.png');
+  background-size: 300px 300px;
+  /* Ajusta el tamaño del patrón */
+  color: #e6e5e5;
+  /* Asegúrate de que el texto tenga buen contraste */
+  display: flex;
+  flex-direction: column;
+  /* Opcional: asegura que los elementos se coloquen uno debajo del otro */
+  justify-content: center;
+  /* Centra verticalmente */
+  align-items: center;
+  /* Centra horizontalmente */
+  min-height: 100vh;
+  /* Asegura que el body ocupe al menos toda la altura de la pantalla */
+  margin: 0;
+}
+
+h2{
+  font-size: 28px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Ocupa toda la pantalla */
+  color: white;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 4rem;
+  /* Tamaño grande del título */
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.profile-picture {
+  width: 225px;   /* Ajusta el tamaño de la imagen */
+  height: 225px;  /* Asegura que la imagen sea cuadrada */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover;  /* Asegura que la imagen se ajuste bien */
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+.scroll-down-icon {
+  margin-top: 30px;
+  /* Espacio entre el ícono y el texto */
+  animation: bounce 2s infinite;
+  /* Animación para hacer que el ícono "rebote" */
+  transition: transform 0.3s ease;
+  /* Transición suave al aplicar transformaciones */
+}
+
+/* Animación de rebote para atraer atención al ícono */
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  
-  header {
-    background-color: #282c34;
-    color: white;
-    padding: 20px;
-    text-align: center;
+
+  40% {
+    transform: translateY(-10px);
   }
-  
-  ul {
-    list-style-type: none;
+
+  60% {
+    transform: translateY(-5px);
   }
-  
-  section {
-    padding: 20px;
-  }
-  
-  .project {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 15px;
-  }
-  
-  a {
-    color: #61dafb;
-    text-decoration: none;
-  }
-  
+}
+.about{
+  font-size: 20px !important;
+}
+
+/* Efecto hover para aumentar el tamaño del ícono */
+.scroll-down-icon:hover {
+  transform: scale(1.2);
+  /* Aumenta el tamaño del ícono al 120% */
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 20px;
+}
+
+/* Estilo general del contenedor de proyectos */
+#projects {
+  padding: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Proyectos en una fila y con espacio alrededor */
+.project {
+  display: inline-block;
+  background-color: #fff;
+  padding: 20px;
+  margin-right: 15px;
+  width: 300px; /* Ajusta el ancho aquí */
+  vertical-align: top;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  white-space: normal; /* Asegura que el texto dentro de los proyectos no se vea comprimido */
+}
+
+/* Si quieres un poco de margen inferior */
+#projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#projects h3{
+  color: rgb(111, 111, 111);
+}
+
+#projects p{
+  color: rgb(111, 111, 111);
+}
+
+#projects::-webkit-scrollbar {
+  height: 10px;
+}
+
+#projects::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+#projects::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+/* Asegúrate de que los contenedores .contacto estén alineados */
+.contacto {
+  display: flex;
+  align-items: center;
+  /* Alinea los íconos y el texto verticalmente */
+  margin: 10px 0;
+  /* Espaciado entre cada método de contacto */
+}
+
+.contacto a {
+  text-decoration: none;
+}
+
+.contacto svg {
+  margin-right: 10px;
+  /* Agrega un pequeño espacio entre el ícono y el texto */
+}
+
+.botonCV {
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: .3s;
+  margin-top: 15px;
+}
+
+.botonCV span {
+  background-color: #2151a4;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.botonCV:hover {
+  color: #111111;
+}
+
+.botonCV:hover span {
+  background: none;
+}
+
+.botonCV:active {
+  transform: scale(0.9);
+}
