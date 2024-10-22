@@ -9,14 +9,18 @@ const Header = () => {
     };
 
     const descargaCV = () => {
-        const fileUrl = '/CV Adrián Portales.pdf';
+        // Asegúrate de que el nombre del archivo esté correctamente configurado
+        const fileUrl = `${process.env.PUBLIC_URL}/CV Adrián Portales.pdf`;
+
+        // Crea un enlace para la descarga
         const link = document.createElement('a');
         link.href = fileUrl;
-        link.setAttribute('download', 'CV_AdrianPortales.pdf');
+        link.setAttribute('download', 'CV_Adrian_Portales.pdf'); // Asegúrate de que el nombre aquí sea correcto
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     };
+
 
     return (
         <header className='header'>
