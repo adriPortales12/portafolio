@@ -20,7 +20,7 @@ const header = () => {
 
     return (
         <header className='header'>
-            <img src="/cara.png" alt="Mi foto" className="profile-picture" />
+            <img src={`${process.env.PUBLIC_URL}/cara.png`} alt="Perfil" className="profile-picture" />
             <About />
             <button onClick={descargaCV} className='botonCV'>
                 <span> Descargar CV</span>
