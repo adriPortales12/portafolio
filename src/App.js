@@ -1,5 +1,6 @@
 // src/App.js
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header';
 import Projects from './components/projects';
 import Contact from './components/contact';

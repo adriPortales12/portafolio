@@ -20,7 +20,7 @@ body {
   margin: 0;
 }
 
-h2{
+h2 {
   font-size: 28px;
 }
 
@@ -47,11 +47,13 @@ h2{
 }
 
 .profile-picture {
-  width: 225px;   /* Ajusta el tamaño de la imagen */
-  height: 225px;  /* Asegura que la imagen sea cuadrada */
-  border-radius: 50%; /* Hace que la imagen sea circular */
-  object-fit: cover;  /* Asegura que la imagen se ajuste bien */
-  margin-bottom: 20px; /* Espacio debajo de la imagen */
+
+  border-radius: 50%;
+  /* Hace que la imagen sea circular */
+  object-fit: cover;
+  /* Asegura que la imagen se ajuste bien */
+  margin-bottom: 20px;
+  /* Espacio debajo de la imagen */
 }
 
 .scroll-down-icon {
@@ -82,7 +84,8 @@ h2{
     transform: translateY(-5px);
   }
 }
-.about{
+
+.about {
   font-size: 20px !important;
 }
 
@@ -100,52 +103,25 @@ section {
   padding: 20px;
 }
 
-/* Estilo general del contenedor de proyectos */
-#projects {
-  padding: 20px;
-  overflow-x: auto;
-  white-space: nowrap;
+
+
+.card {
+  /* Puedes definir un alto mínimo si es necesario */
+  min-height: 250px; /* Ajusta esto según sea necesario */
 }
 
-/* Proyectos en una fila y con espacio alrededor */
-.project {
-  display: inline-block;
-  background-color: #fff;
-  padding: 20px;
-  margin-right: 15px;
-  width: 300px; /* Ajusta el ancho aquí */
-  vertical-align: top;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  white-space: normal; /* Asegura que el texto dentro de los proyectos no se vea comprimido */
+.card-body {
+  padding: 1.25rem; /* Espaciado por defecto */
 }
 
-/* Si quieres un poco de margen inferior */
-#projects h2 {
-  text-align: center;
-  margin-bottom: 30px;
+.card-text {
+  margin-bottom: 0.5rem; /* Espaciado en la parte inferior */
+  line-height: 1.5; /* Mejora la legibilidad */
 }
 
-#projects h3{
-  color: rgb(111, 111, 111);
-}
-
-#projects p{
-  color: rgb(111, 111, 111);
-}
-
-#projects::-webkit-scrollbar {
-  height: 10px;
-}
-
-#projects::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 10px;
-}
-
-#projects::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+/* Asegúrate de que no haya un ancho máximo que impida el flujo */
+.card-title, .card-text {
+  white-space: normal; /* Permite que el texto fluya a la siguiente línea */
 }
 
 
@@ -153,24 +129,6 @@ section {
 a {
   color: #61dafb;
   text-decoration: none;
-}
-
-/* Asegúrate de que los contenedores .contacto estén alineados */
-.contacto {
-  display: flex;
-  align-items: center;
-  /* Alinea los íconos y el texto verticalmente */
-  margin: 10px 0;
-  /* Espaciado entre cada método de contacto */
-}
-
-.contacto a {
-  text-decoration: none;
-}
-
-.contacto svg {
-  margin-right: 10px;
-  /* Agrega un pequeño espacio entre el ícono y el texto */
 }
 
 .botonCV {
