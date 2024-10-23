@@ -24,11 +24,12 @@ const Header = () => {
 
     return (
         <header className='header'>
+            <h1 className='my-2'>Adrián Portales</h1>
             <div className="container text-center my-5">
                 <img
-                    src={`${process.env.PUBLIC_URL}/cara.png`}
+                    src={`${process.env.PUBLIC_URL}/cara.jpeg`}
                     alt="Perfil"
-                    className="profile-picture rounded-circle mb-1"
+                    className="profile-picture rounded-circle mb-3"
 
                 />
 

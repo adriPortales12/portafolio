@@ -35,8 +35,9 @@ h2 {
   text-align: center;
 }
 
-.header h1 {
-  font-size: 4rem;
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
   /* Tamaño grande del título */
   margin: 0;
 }
@@ -54,6 +55,7 @@ h2 {
   /* Asegura que la imagen se ajuste bien */
   margin-bottom: 20px;
   /* Espacio debajo de la imagen */
+  max-width: 20%;
 }
 
 .scroll-down-icon {
@@ -107,23 +109,41 @@ section {
 
 .card {
   /* Puedes definir un alto mínimo si es necesario */
-  min-height: 250px; /* Ajusta esto según sea necesario */
+  min-height: 250px;
+  /* Ajusta esto según sea necesario */
+  z-index: 1;
+  transition: transform 0.2s;
+  /* Animación al pasar el mouse */
+  background-color: rgb(172, 203, 255);
+
+}
+.card:hover {
+  transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
 }
 
 .card-body {
-  padding: 1.25rem; /* Espaciado por defecto */
+  padding: 1.25rem;
+  /* Espaciado por defecto */
 }
 
 .card-text {
-  margin-bottom: 0.5rem; /* Espaciado en la parte inferior */
-  line-height: 1.5; /* Mejora la legibilidad */
+  margin-bottom: 0.5rem;
+  /* Espaciado en la parte inferior */
+  line-height: 1.5;
+  /* Mejora la legibilidad */
 }
 
 /* Asegúrate de que no haya un ancho máximo que impida el flujo */
-.card-title, .card-text {
-  white-space: normal; /* Permite que el texto fluya a la siguiente línea */
+.card-title,
+.card-text {
+  white-space: normal;
+  /* Permite que el texto fluya a la siguiente línea */
 }
 
+.min-height-custom {
+  min-height: 50px;
+  /* Cambia 200px por la altura mínima que necesites */
+}
 
 
 a {
@@ -186,7 +206,7 @@ a {
 }
 
 .botonSec:hover span {
-  background: #74a5ff;
+  background: #ffffff;
 }
 
 .botonSec:active {
@@ -197,22 +217,36 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+.contacto:hover{
+  transform: scale(1.05);
 }
 
 .contact-icons {
   position: fixed;
-  top: 50%; /* Centrado verticalmente */
-  left: 20px; /* Ajusta esta distancia según tu preferencia */
+  top: 50%;
+  /* Centrado verticalmente */
+  left: 20px;
+  /* Ajusta esta distancia según tu preferencia */
   transform: translateY(-50%);
+  z-index: 0;
 }
 
-.transition-text{
+.transition-text {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  opacity: 0;  
+  opacity: 0;
 }
 
 .contacto:hover .transition-text {
   visibility: visible;
   opacity: 1;
+}
+
+.lead {
+  z-index: 1;
+  /* Alta prioridad para el contenido "About Me" */
+  position: relative;
+  /* Asegura que el texto esté en el contexto correcto */
 }

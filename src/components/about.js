@@ -7,9 +7,8 @@ const About = () => {
       <div className="row">
         <div className="col-md-8 mx-auto">
           <p className="lead text-center">
-            Soy un desarrollador apasionado por crear aplicaciones web
-            con un enfoque en las mejores prácticas y la eficiencia.
-            Me especializo en JavaScript, React, y Node.js.
+            Soy un desarrollador Junior con ganas de desarrollarme como programador.
+            Tengo conocimientos en JavaScript, usando React, y Node.js, y en PHP.
           </p>
         </div>
       </div>
