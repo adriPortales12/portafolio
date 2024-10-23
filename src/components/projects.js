@@ -33,7 +33,7 @@ function Projects() {
                 <h3 className="card-title">{project.title}</h3>
                 <p className="card-text">{project.description}</p>
                 <p><strong>Tecnologías:</strong> {project.tech}</p>
-                <a href={project.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+                <a href={project.link} className="botonSec" target="_blank" rel="noopener noreferrer"><span>Ver Proyecto</span></a>
               </div>
             </div>
           </div>

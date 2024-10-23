@@ -161,3 +161,58 @@ a {
 .botonCV:active {
   transform: scale(0.9);
 }
+
+.botonSec {
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: .3s;
+  margin-top: 15px;
+}
+
+.botonSec span {
+  background-color: #0043c0;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.botonSec:hover {
+  color: #000000;
+}
+
+.botonSec:hover span {
+  background: #74a5ff;
+}
+
+.botonSec:active {
+  transform: scale(0.9);
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icons {
+  position: fixed;
+  top: 50%; /* Centrado verticalmente */
+  left: 20px; /* Ajusta esta distancia según tu preferencia */
+  transform: translateY(-50%);
+}
+
+.transition-text{
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;  
+}
+
+.contacto:hover .transition-text {
+  visibility: visible;
+  opacity: 1;
+}

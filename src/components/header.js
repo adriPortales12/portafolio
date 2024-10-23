@@ -35,7 +35,7 @@ const Header = () => {
                 <About />
 
 
-                <div className="container my-5 d-flex justify-content-center">
+                <div className="container d-flex justify-content-center">
                     <button onClick={descargaCV} className="botonCV">
                         <span> Descargar CV</span>
                     </button>
