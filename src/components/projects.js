@@ -8,10 +8,10 @@ const projects = [
     link: "https://github.com/adriPortales12/Wallity"
   },
   {
-    title: "Nuevo Proyecto",
-    description: "Aplicación en desarrollo...",
-    tech: "Javascript(React, Node)",
-    link: "https://github.com/adriPortales12/"
+    title: "Curso Node",
+    description: "Actualmente estudiando curso de Node.js...",
+    tech: "Javascript(Node, Express, etc)",
+    link: "https://www.youtube.com/playlist?list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7"
   }
 ];
 
